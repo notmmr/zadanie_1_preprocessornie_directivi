@@ -7,15 +7,15 @@
 #error Please Set Mode!!!
 #endif
 
-int main() 
+int main()
 {
 #if MODE == 0
     printf("I'm working in test mode.\n");
 #elif MODE == 1
-    auto add([&](int a, int b) -> int 
+    auto add = [](int a, int b) -> int
         {
             return a + b;
-        });
+        };
 
     int num1, num2;
     printf("Enter number 1: ");
